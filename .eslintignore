@@ -1,0 +1,12 @@
+# nyc test coverage
+.nyc_output
+
+# Npm package lock file
+package-lock.json
+
+# Dependency directory
+node_modules
+
+# Styles
+./src/Style/Sass
+node_modules
