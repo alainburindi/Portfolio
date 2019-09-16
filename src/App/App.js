@@ -5,19 +5,20 @@ import { Provider } from 'react-redux';
 import store from '../Redux/store';
 import Home from './components/Home/Home';
 import Resume from './components/Resume/Resume';
+import Contact from './components/Contact/contact';
 
 function App() {
   return (
     <div className="App">
-    <Provider store={store}>
-
-      <HashRouter basename="/">
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/resume" exact component={Resume} />
-        </Switch>
+      <Provider store={store}>
+        <HashRouter basename="/">
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/resume" exact component={Resume} />
+            <Route path="/contact" exact component={Contact} />
+          </Switch>
         </HashRouter>
-        </Provider>
+      </Provider>
     </div>
   );
 }

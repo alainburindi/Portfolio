@@ -3,16 +3,12 @@ import thunk from 'redux-thunk';
 import React from 'react';
 import promiseMiddleware from 'redux-promise-middleware';
 import configureStore from 'redux-mock-store';
-// import reducers from '../../Redux/Reducers/Registration';
-// import registerActions from '../../Redux/Actions/Registration';
 import profileActions from '../Redux/Actions/profile';
 import { shallow } from '../enzyme';
 import profileReducer from '../Redux/Reducers/profile';
-// import { Registration, mapStateToProps } from '../Components/Registration/Registration';
 import { Resume, mapStateToProps } from '../App/components/Resume/Resume';
 
 const { getProfile } = profileActions;
-const history = { push: jest.fn() };
 
 const middlewares = [thunk, promiseMiddleware];
 const mockStore = configureStore(middlewares);
