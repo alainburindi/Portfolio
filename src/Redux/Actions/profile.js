@@ -4,7 +4,7 @@ import actionTypes from './index';
 export default {
   getProfile: () => (dispatch) => {
     axios
-      .get('/users/alainburindi', { headers: { Authorization: 'token 2c01dfeb3e7ba65f03010f3afc1affb3339a395e' } })
+      .get('/users/alainburindi', { headers: { Authorization: 'token bb60515c322f5422913110c9c6f660864b6f52eb' } })
       .then((res) => {
         dispatch({ type: actionTypes.GET_PROFILE, payload: res.data });
       })

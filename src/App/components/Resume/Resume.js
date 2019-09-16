@@ -23,10 +23,10 @@ export class Resume extends Component {
     const { data } = this.props;
     const { email, firstName, lastName } = this.state;
     return (
-      <div className="container">
+      <div className="container" id="resume">
         <div className="colums">
           <div className="column is-6 is-offset-3">
-            <h1 className="title is-1">My Resume</h1>
+            <h1 className="title is-1 has-text-centered">My Resume</h1>
             <hr />
             <div className="content">
               <h3 className="title is-3">Personal details</h3>

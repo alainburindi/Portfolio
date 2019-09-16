@@ -54,7 +54,21 @@ describe('Reducer', () => {
   });
   test('GET_PROFILE_FAILED', () => {
     const state = profileReducer({}, { type: 'GET_PROFILE_FAILED' });
-    expect(state).toEqual({ profileFailed: true });
+    expect(state).toEqual({
+      data: {
+        login: 'alainburindi',
+        avatar_url: 'https://avatars1.githubusercontent.com/u/41288911?v=4',
+        url: 'https://api.github.com/users/alainburindi',
+        type: 'User',
+        name: 'Alain Burindi',
+        location: 'Rwanda',
+        public_repos: 16,
+        public_gists: 1,
+        followers: 1,
+        following: 1
+      },
+      profileFailed: true
+    });
   });
   test('DEFAULT', () => {
     const state = profileReducer(undefined, { type: 'UNKNOWN' });
