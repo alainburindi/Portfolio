@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from '../components/Home/Home';
+import Home from '../App/components/Home/Home';
 import { shallow } from '../enzyme';
 
 test('should render the home page', () => {
