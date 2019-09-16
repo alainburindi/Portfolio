@@ -103,14 +103,10 @@
   },
   "jest": {
     "coveragePathIgnorePatterns": [
-      "src/App/_tests_/articles/articles.js",
-      "src/App/ApiActions",
       "src/App/App",
-      "configs/axios",
+      "src/configs/axios",
       "src/Redux/store",
       "src/Redux/Actions/index",
-      "src/Redux/Reducers/index",
-      "src/configs/urls",
       "src/Redux/Reducers/index"
     ],
     "setupFilesAfterEnv": [

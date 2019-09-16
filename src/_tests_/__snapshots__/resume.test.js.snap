@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the resume page 1`] = `ShallowWrapper {}`;
+
+exports[`should update the props 1`] = `ShallowWrapper {}`;
